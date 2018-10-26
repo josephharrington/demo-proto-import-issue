@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message HissRequest {
+    int32 duration = 1;
+    int32 volume = 2;
+}
+
+message HissReply {
+    string response = 1;
+}

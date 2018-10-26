@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "hiss.proto";
+
+service CatService {
+    rpc Meow (MeowRequest) returns (MeowReply);
+    rpc Hiss (HissRequest) returns (HissReply);
+}
+
+message MeowRequest {
+    int32 duration = 1;
+    int32 volume = 2;
+}
+
+message MeowReply {
+    string response = 1;
+}
